@@ -5,7 +5,22 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    int a, b;
+    std::cout << "Enter integer 'a': ";
+    std::cin >> a;
+    std::cout << "Enter integer 'b': ";
+    std::cin >> b;
+
+    int* ptrA = &a;
+    int* ptrB = &b;
+
+    std::cout << '\n';
+
+    std::cout << "'a' is : " << *ptrA << '\n';
+    std::cout << "Address of 'a' is: " << ptrA << '\n';
+
+    std::cout << "'b' is : " << *ptrB << '\n';
+    std::cout << "Address of 'b' is: " << ptrB << '\n';
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
